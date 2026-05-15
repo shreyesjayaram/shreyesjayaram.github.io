@@ -58,8 +58,72 @@ html[data-theme="dark"] .page__footer {
   background-color: #252838 !important;
 }
 
-/* Slightly larger profile image */
+/* Keep navigation seamless with background */
+html[data-theme="dark"] .greedy-nav {
+  background-color: #252838 !important;
+}
+
+/* Push search/theme icons to right */
+.greedy-nav .visible-links {
+  margin-right: auto;
+}
+
+/* Better sidebar photo: larger + zoomed/cropped */
+.author__avatar {
+  width: 220px !important;
+  height: 220px !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+}
+
 .author__avatar img {
-  max-width: 180px !important;
-  width: 180px !important;
+  width: 220px !important;
+  height: 220px !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center 35% !important;
+  transform: scale(1.35);
+}
+
+/* UCLA link */
+.ucla-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #FFD100 !important; /* UCLA Gold */
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.ucla-link:hover {
+  color: #FFDD44 !important;
+}
+
+/* Sidebar buttons */
+.profile-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.profile-buttons a {
+  display: inline-block;
+  background: #2774AE !important; /* UCLA Blue */
+  color: white !important;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 700;
+  text-align: center;
+}
+
+.profile-buttons a:hover {
+  background: #005587 !important;
+  color: white !important;
+}
+
+/* Remove footer follow/feed/copyright clutter */
+.page__footer-follow,
+.page__footer-copyright {
+  display: none !important;
 }
