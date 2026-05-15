@@ -1,6 +1,6 @@
 /* ==========================================================================
-    DEFAULT THEME - DARK VERSION
-    ========================================================================== */
+   DEFAULT THEME - DARK VERSION
+   ========================================================================== */
 
 $primary-color              : #252838;
 $gray                       : #7a8288;
@@ -50,7 +50,10 @@ html[data-theme="dark"] {
     --global-thead-color                : #{$background};
 }
 
-/* Unified dark theme */
+/* ==========================================================================
+   Unified dark background (Kevin Grieco style)
+   ========================================================================== */
+
 html[data-theme="dark"] .masthead,
 html[data-theme="dark"] body,
 html[data-theme="dark"] .page,
@@ -58,72 +61,85 @@ html[data-theme="dark"] .page__footer {
   background-color: #252838 !important;
 }
 
-/* Keep navigation seamless with background */
-html[data-theme="dark"] .greedy-nav {
-  background-color: #252838 !important;
-}
+/* ==========================================================================
+   Profile photo
+   ========================================================================== */
 
-/* Push search/theme icons to right */
-.greedy-nav .visible-links {
-  margin-right: auto;
-}
-
-/* Better sidebar photo: larger + zoomed/cropped */
 .author__avatar {
-  width: 220px !important;
-  height: 220px !important;
+  width: 200px !important;
+  height: 200px !important;
   overflow: hidden !important;
   border-radius: 50% !important;
 }
 
 .author__avatar img {
-  width: 220px !important;
-  height: 220px !important;
+  width: 200px !important;
+  height: 200px !important;
   max-width: none !important;
   object-fit: cover !important;
-  object-position: center 35% !important;
-  transform: scale(1.35);
+  object-position: center 25% !important;
+  transform: scale(1.4);
 }
 
-/* UCLA link */
+/* ==========================================================================
+   UCLA affiliation link
+   ========================================================================== */
+
 .ucla-link {
-  display: inline-block;
-  margin-top: 0.4rem;
-  color: #FFD100 !important; /* UCLA Gold */
+  color: #FFD100 !important;   /* UCLA Gold */
   font-weight: 700;
   text-decoration: none !important;
 }
 
 .ucla-link:hover {
-  color: #FFDD44 !important;
-}
-
-/* Sidebar buttons */
-.profile-buttons {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.profile-buttons a {
-  display: inline-block;
-  background: #2774AE !important; /* UCLA Blue */
-  color: white !important;
-  padding: 0.45rem 0.7rem;
-  border-radius: 6px;
+  color: #B9DFFF !important;
   text-decoration: none !important;
+}
+
+/* ==========================================================================
+   Kevin Grieco–style sidebar links
+   ========================================================================== */
+
+html[data-theme="dark"] .author__urls {
+  margin-top: 1.5rem;
+}
+
+html[data-theme="dark"] .author__urls li {
+  margin-bottom: 0.8rem;
+}
+
+html[data-theme="dark"] .author__urls a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  color: #B9DFFF !important;
+  font-size: 1.6rem;
   font-weight: 700;
+  text-decoration: none !important;
+  padding: 0;
+}
+
+html[data-theme="dark"] .author__urls a:hover {
+  color: #FFD100 !important;
+  text-decoration: none !important;
+}
+
+html[data-theme="dark"] .author__urls a i,
+html[data-theme="dark"] .author__urls a svg {
+  font-size: 2rem;
+  width: 2rem;
   text-align: center;
 }
 
-.profile-buttons a:hover {
-  background: #005587 !important;
-  color: white !important;
-}
+/* ==========================================================================
+   Hide footer follow/feed section
+   ========================================================================== */
 
-/* Remove footer follow/feed/copyright clutter */
-.page__footer-follow,
-.page__footer-copyright {
+.page__footer-follow {
   display: none !important;
 }
