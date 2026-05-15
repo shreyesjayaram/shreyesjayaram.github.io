@@ -15,25 +15,18 @@ author:
   avatar                 : "profile.jpeg"
   name                   : "Shreyes Jayaram"
   pronouns               :
-  bio                    : |
-    PhD Candidate
-
-    <a class="ucla-link" href="https://polisci.ucla.edu/" target="_blank">UCLA Political Science</a>
-
-    <div class="profile-buttons">
-      <a href="mailto:jayaram@ucla.edu">✉ Email</a>
-      <a href="tel:YOUR_PHONE_NUMBER">☎ Phone</a>
-      <a href="https://maps.google.com/?q=UCLA+Department+of+Political+Science" target="_blank">⌂ Address</a>
-    </div>
+  bio                    : "PhD Candidate"
   location               :
-  employer               :
+  employer               : '<a class="ucla-link" href="https://polisci.ucla.edu/" target="_blank">UCLA Political Science</a>'
   uri                    :
-  email                  :
+  email                  : "jayaram@ucla.edu"
 
+  # Academic profiles
   googlescholar          :
   orcid                  :
   pubmed                 :
 
+  # Developer / social profiles
   github                 :
   linkedin               :
   twitter                :
