@@ -1,34 +1,40 @@
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"   # Options: default, air, sunrise, mint, dirt, contrast
+site_theme               : "default"
 title                    : "Shreyes Jayaram"
 title_separator          : "-"
 name                     : &name "Shreyes Jayaram"
 description              : &description "Academic website of Shreyes Jayaram"
 
-# IMPORTANT: Use your actual GitHub Pages URL and repository
 url                      : "https://shreyesjayaram.github.io"
-baseurl                  : "/jayaram.github.io"
-repository               : "shreyesjayaram/jayaram.github.io"
+baseurl                  : ""
+repository               : "shreyesjayaram/shreyesjayaram.github.io"
 
-# Site Author (sidebar)
+# Site Author
 author:
   avatar                 : "profile.jpeg"
   name                   : "Shreyes Jayaram"
   pronouns               :
-  bio                    : "PhD Candidate in Political Science, UCLA"
-  location               : "Los Angeles, CA"
-  employer               : "University of California, Los Angeles"
-  uri                    :
-  email                  : "jayaram@ucla.edu"
+  bio                    : |
+    PhD Candidate
 
-  # Academic profiles (add IDs later if desired)
+    <a class="ucla-link" href="https://polisci.ucla.edu/" target="_blank">UCLA Political Science</a>
+
+    <div class="profile-buttons">
+      <a href="mailto:jayaram@ucla.edu">✉ Email</a>
+      <a href="tel:YOUR_PHONE_NUMBER">☎ Phone</a>
+      <a href="https://maps.google.com/?q=UCLA+Department+of+Political+Science" target="_blank">⌂ Address</a>
+    </div>
+  location               :
+  employer               :
+  uri                    :
+  email                  :
+
   googlescholar          :
   orcid                  :
   pubmed                 :
 
-  # Social and developer profiles
-  github                 : "shreyesjayaram"
+  github                 :
   linkedin               :
   twitter                :
   bluesky                :
@@ -40,8 +46,12 @@ words_per_minute         : 200
 future                   : true
 read_more                : "disabled"
 talkmap_link             : false
+search                   : true
 comments:
   provider               : false
+
+atom_feed:
+  hide                   : true
 
 # SEO and Social
 twitter:
