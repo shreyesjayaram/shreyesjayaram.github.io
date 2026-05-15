@@ -76,18 +76,18 @@ $sidebar-screen-min-width   : 1024px;
    ========================================================================== */
 
 .ucla-link {
-  color: #FFD100 !important;   /* UCLA Gold */
+  color: #2774AE !important;
   font-weight: 700;
   text-decoration: none !important;
 }
 
 .ucla-link:hover {
-  color: #2774AE !important;   /* UCLA Blue */
+  color: #FFD100 !important;
   text-decoration: none !important;
 }
 
 /* ==========================================================================
-   Kevin Grieco–style sidebar links
+   Sidebar links
    ========================================================================== */
 
 .author__urls {
@@ -102,28 +102,36 @@ $sidebar-screen-min-width   : 1024px;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-
-  color: #2774AE !important;   /* UCLA Blue */
-  font-size: 1.6rem;
+  color: #2774AE !important;
+  font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none !important;
   padding: 0;
 }
 
 .author__urls a:hover {
-  color: #FFD100 !important;   /* UCLA Gold */
+  color: #FFD100 !important;
   text-decoration: none !important;
 }
 
 .author__urls a i,
 .author__urls a svg {
-  font-size: 2rem;
-  width: 2rem;
+  font-size: 1.4rem;
+  width: 1.4rem;
   text-align: center;
+}
+
+/* ==========================================================================
+   Employer link (UCLA blue in light mode)
+   ========================================================================== */
+
+.author__employer a,
+span.author__employer {
+  color: #2774AE !important;
+  font-weight: 700;
 }
 
 /* ==========================================================================
