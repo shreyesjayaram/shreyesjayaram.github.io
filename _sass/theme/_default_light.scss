@@ -1,6 +1,6 @@
 /* ==========================================================================
-    DEFAULT THEME - LIGHT VERSION
-    ========================================================================== */
+   DEFAULT THEME - LIGHT VERSION
+   ========================================================================== */
 
 $primary-color              : #2fa7df;
 $gray                       : #7a8288;
@@ -27,15 +27,15 @@ $sidebar-screen-min-width   : 1024px;
 :root {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #ffffff;
-    --global-footer-bg-color            : #ffffff;
+    --global-footer-bg-color            : #f2f3f3;
     --global-border-color               : #{$lighter-gray};
     --global-dark-border-color          : #bdc1c4;
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #005587;
-    --global-link-color-hover           : #2774AE;
-    --global-link-color-visited         : #005587;
+    --global-fig-caption-color          : mix(#fff, #{$dark-gray}, 25%);
+    --global-link-color                 : #00008b;
+    --global-link-color-hover           : #00008b;
+    --global-link-color-visited         : #00008b;
     --global-masthead-link-color        : #000000;
     --global-masthead-link-color-hover  : #000000;
     --global-text-color                 : #{$dark-gray};
@@ -43,77 +43,93 @@ $sidebar-screen-min-width   : 1024px;
     --global-thead-color                : #{$lighter-gray};
 }
 
-/* Blue outer header */
+/* ==========================================================================
+   Header styling
+   ========================================================================== */
+
 .masthead {
   background-color: #2fa7df !important;
 }
 
-/* Keep inner nav clean */
-.greedy-nav {
-  background-color: #ffffff !important;
-}
+/* ==========================================================================
+   Profile photo
+   ========================================================================== */
 
-/* Push search/theme icons to right */
-.greedy-nav .visible-links {
-  margin-right: auto;
-}
-
-/* Better sidebar photo: larger + zoomed/cropped */
 .author__avatar {
-  width: 220px !important;
-  height: 220px !important;
+  width: 200px !important;
+  height: 200px !important;
   overflow: hidden !important;
   border-radius: 50% !important;
 }
 
 .author__avatar img {
-  width: 220px !important;
-  height: 220px !important;
+  width: 200px !important;
+  height: 200px !important;
   max-width: none !important;
   object-fit: cover !important;
-  object-position: center 35% !important;
-  transform: scale(1.35);
+  object-position: center 25% !important;
+  transform: scale(1.4);
 }
 
-/* UCLA link */
+/* ==========================================================================
+   UCLA affiliation link
+   ========================================================================== */
+
 .ucla-link {
-  display: inline-block;
-  margin-top: 0.4rem;
-  color: #2774AE !important;
+  color: #FFD100 !important;   /* UCLA Gold */
   font-weight: 700;
   text-decoration: none !important;
 }
 
 .ucla-link:hover {
-  color: #005587 !important;
-}
-
-/* Sidebar buttons */
-.profile-buttons {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.profile-buttons a {
-  display: inline-block;
-  background: #2774AE !important;
-  color: white !important;
-  padding: 0.45rem 0.7rem;
-  border-radius: 6px;
+  color: #2774AE !important;   /* UCLA Blue */
   text-decoration: none !important;
+}
+
+/* ==========================================================================
+   Kevin Grieco–style sidebar links
+   ========================================================================== */
+
+.author__urls {
+  margin-top: 1.5rem;
+}
+
+.author__urls li {
+  margin-bottom: 0.8rem;
+}
+
+.author__urls a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  color: #2774AE !important;   /* UCLA Blue */
+  font-size: 1.6rem;
   font-weight: 700;
+  text-decoration: none !important;
+  padding: 0;
+}
+
+.author__urls a:hover {
+  color: #FFD100 !important;   /* UCLA Gold */
+  text-decoration: none !important;
+}
+
+.author__urls a i,
+.author__urls a svg {
+  font-size: 2rem;
+  width: 2rem;
   text-align: center;
 }
 
-.profile-buttons a:hover {
-  background: #005587 !important;
-  color: white !important;
-}
+/* ==========================================================================
+   Hide footer follow/feed section
+   ========================================================================== */
 
-/* Remove footer follow/feed/copyright clutter */
-.page__footer-follow,
-.page__footer-copyright {
+.page__footer-follow {
   display: none !important;
 }
